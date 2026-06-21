@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lipify — Romanized Subtitles</title>
+  <meta name="description" content="Read Hindi & Tamil subtitles in Roman script (Hinglish/Tanglish) with an offline meaning translation in your language." />
+  <style>
+    :root{
+      --bg:#0c0c0e;--bg2:#16161a;--bg3:#202024;--border:#2c2c33;
+      --text:#e7e8ec;--muted:#9a9aa3;--silver:#f6f7f9;--accent:#c4c5cb;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:"Segoe UI",system-ui,-apple-system,sans-serif;
+      background:radial-gradient(120% 60% at 50% 0%,rgba(231,232,236,0.05),transparent 60%),var(--bg);
+      color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;
+    }
+    .wrap{max-width:860px;margin:0 auto;padding:0 22px}
+    header{padding:64px 0 28px;text-align:center}
+    .logo{width:88px;height:88px;filter:drop-shadow(0 8px 24px rgba(0,0,0,.5))}
+    h1{font-size:40px;font-weight:800;letter-spacing:-.02em;margin:18px 0 6px}
+    .tag{color:var(--muted);font-size:17px}
+    .cta{display:inline-flex;gap:8px;align-items:center;margin-top:26px;padding:12px 22px;
+      border-radius:12px;background:linear-gradient(180deg,var(--silver),var(--accent));
+      color:#161618;font-weight:700;text-decoration:none;transition:.15s}
+    .cta:hover{filter:brightness(1.05)}
+    .demo{margin:40px auto;max-width:520px;background:var(--bg2);border:1px solid var(--border);
+      border-radius:16px;padding:22px 24px;text-align:left}
+    .demo .line1{font-size:20px;font-weight:700}
+    .demo .line2{font-size:15px;color:var(--muted);margin-top:6px}
+    .demo .line3{font-size:16px;color:var(--text);margin-top:10px;padding-top:10px;border-top:1px solid var(--border)}
+    section{padding:34px 0;border-top:1px solid var(--border)}
+    h2{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:18px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .card{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:18px}
+    .card h3{font-size:15px;margin-bottom:6px}
+    .card p{font-size:14px;color:var(--muted)}
+    ol{margin-left:18px;color:var(--muted);font-size:15px}
+    ol li{margin:6px 0}
+    footer{padding:40px 0 60px;color:var(--muted);font-size:13px;text-align:center;border-top:1px solid var(--border)}
+    footer a{color:var(--accent)}
+    .pill{display:inline-block;font-size:12px;color:var(--muted);background:var(--bg3);
+      border:1px solid var(--border);border-radius:999px;padding:4px 12px;margin-top:14px}
+    @media(max-width:560px){.grid{grid-template-columns:1fr}h1{font-size:32px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <svg class="logo" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" aria-label="Lipify logo">
+        <defs>
+          <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#24242b"/><stop offset="1" stop-color="#0c0c0e"/></linearGradient>
+          <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4c5cb"/></linearGradient>
+        </defs>
+        <rect x="2" y="2" width="124" height="124" rx="30" fill="url(#bg)"/>
+        <rect x="2.5" y="2.5" width="123" height="123" rx="29.5" fill="none" stroke="#ffffff" stroke-opacity="0.08"/>
+        <rect x="44" y="32" width="15" height="58" rx="5" fill="url(#silver)"/>
+        <rect x="44" y="75" width="49" height="15" rx="5" fill="url(#silver)"/>
+        <rect x="44" y="96" width="30" height="6" rx="3" fill="#9a9aa3" opacity="0.55"/>
+        <path d="M91 31 L93.4 38.6 L101 41 L93.4 43.4 L91 51 L88.6 43.4 L81 41 L88.6 38.6 Z" fill="#f6f7f9"/>
+      </svg>
+      <h1>Lipify</h1>
+      <div class="tag">Read along in any script.</div>
+      <a class="cta" href="#" id="storeLink">Add to Chrome →</a>
+      <div class="pill">Works with Netflix · Not affiliated with Netflix</div>
+    </header>
+
+    <div class="demo">
+      <div class="line1">aur tum jaise mard hee hote ho</div>
+      <div class="line2">और तुम जैसे मर्द ही होते हो</div>
+      <div class="line3">மேலும் நீங்கள் போன்ற ஆண்கள் இருக்கிறார்கள்</div>
+    </div>
+
+    <section>
+      <h2>What it does</h2>
+      <div class="grid">
+        <div class="card"><h3>Romanized subtitles</h3><p>Hindi &amp; Tamil subtitles rewritten in Roman letters (Hinglish / Tanglish), live and perfectly timed — so you read the words as they're spoken.</p></div>
+        <div class="card"><h3>Offline meaning</h3><p>An optional line shows the meaning in your language, translated <strong>on your device</strong> with Chrome's built-in AI. Nothing leaves your computer.</p></div>
+        <div class="card"><h3>35+ languages</h3><p>Translate into Tamil, English, Spanish, French, Japanese and many more — great for learning Hindi or Tamil from anywhere.</p></div>
+        <div class="card"><h3>Private by design</h3><p>No account, no tracking, no servers. Your settings stay on your device.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>How it works</h2>
+      <ol>
+        <li>Play a Hindi or Tamil title and turn on its original-language subtitles.</li>
+        <li>Lipify rewrites them into Roman script on screen.</li>
+        <li>(Optional) Pick your language, download the small on-device model once — a meaning line appears, fully offline.</li>
+      </ol>
+    </section>
+
+    <footer>
+      <p><a href="privacy.html">Privacy Policy</a> · <a href="mailto:sampathkaali002@gmail.com">Contact</a></p>
+      <p style="margin-top:10px">Lipify works with Netflix. It is not affiliated with, sponsored by, or endorsed by Netflix.</p>
+      <p style="margin-top:10px">© 2026 Lipify · TryAIToday</p>
+    </footer>
+  </div>
+</body>
+</html>
