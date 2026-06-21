@@ -1,0 +1,37 @@
+<svg width="512" height="512" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#24242b"/>
+      <stop offset="1" stop-color="#0c0c0e"/>
+    </linearGradient>
+    <radialGradient id="sheen" cx="0.5" cy="0.05" r="0.9">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#c4c5cb"/>
+    </linearGradient>
+    <linearGradient id="silverBright" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e7e8ec"/>
+    </linearGradient>
+  </defs>
+
+  <!-- app-icon squircle -->
+  <rect x="2" y="2" width="124" height="124" rx="30" fill="url(#bg)"/>
+  <rect x="2" y="2" width="124" height="124" rx="30" fill="url(#sheen)"/>
+  <rect x="2.5" y="2.5" width="123" height="123" rx="29.5" fill="none"
+        stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- "L" monogram: stem + foot. The foot doubles as a subtitle bar. -->
+  <rect x="44" y="32" width="15" height="58" rx="5" fill="url(#silver)"/>
+  <rect x="44" y="75" width="49" height="15" rx="5" fill="url(#silver)"/>
+
+  <!-- subtle second caption line under the foot (the "subtitles" nod) -->
+  <rect x="44" y="96" width="30" height="6" rx="3" fill="#9a9aa3" opacity="0.55"/>
+
+  <!-- ✦ spark — the TryAIToday brand accent -->
+  <path d="M91 31 L93.4 38.6 L101 41 L93.4 43.4 L91 51 L88.6 43.4 L81 41 L88.6 38.6 Z"
+        fill="url(#silverBright)"/>
+</svg>
